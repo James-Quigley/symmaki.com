@@ -34,7 +34,7 @@ const Layout = (
               rel="noreferrer"
             >
               <Image
-                src="/../public/twitter.svg"
+                src="/twitter.svg"
                 alt="Twitter Logo"
                 width="25px"
                 height="25px"
@@ -49,7 +49,7 @@ const Layout = (
               rel="noreferrer"
             >
               <Image
-                src="/../public/linkedin.svg"
+                src="/linkedin.svg"
                 alt="LinkedIn Logo"
                 width="25px"
                 height="25px"

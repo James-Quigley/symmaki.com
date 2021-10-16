@@ -38,8 +38,6 @@ export async function getServerSideProps(): Promise<{ props: Props }> {
     "https://www.bloomberg.com/authors/ATR8C7nQ_q4/sydney-maki.rss"
   );
 
-  console.log(JSON.stringify(feed.items[0]));
-
   return { props: { stories: feed.items as Story[] } };
 }
 
