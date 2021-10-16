@@ -14,7 +14,7 @@ const Layout = (
   }
 ) => {
   return (
-    <div className="w-screen h-screen bg-gray-50">
+    <div className="w-screen h-screen">
       <Head>
         <title>{props.title}</title>
         <meta name="description" content="Sydney Maki's personal website" />

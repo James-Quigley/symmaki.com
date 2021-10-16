@@ -60,7 +60,7 @@ const Home: NextPage<Props> = (props) => {
                 rel="noreferrer"
               >
                 <div className="h-full">
-                  <div className="h-1/2">
+                  <div className="h-1/2 flex">
                     {story?.media?.$?.url ? (
                       <img
                         className="h-full w-auto mx-auto"
