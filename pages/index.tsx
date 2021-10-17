@@ -44,8 +44,8 @@ export async function getServerSideProps(): Promise<{ props: Props }> {
 const Home: NextPage<Props> = (props) => {
   return (
     <Layout>
-      <div className="container mx-auto p-6">
-        <p className="text-xl text-center my-6 mx-auto max-w-prose">
+      <div className="container mx-auto px-6">
+        <p className="text-xl text-center my-12 mx-auto max-w-prose">
           Sydney Maki is a global markets reporter and editor for Bloomberg News
           in New York, covering debt restructurings, currencies, bonds and Latin
           America.
