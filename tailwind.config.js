@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -9,7 +10,11 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        serif: ["Playfair Display", "serif"],
+      },
+    },
   },
   variants: {
     extend: {},

@@ -44,12 +44,15 @@ export async function getServerSideProps(): Promise<{ props: Props }> {
 const Home: NextPage<Props> = (props) => {
   return (
     <Layout>
-      <div className="container mx-auto px-6">
-        <p className="text-xl text-center my-12 mx-auto max-w-prose">
+      <div className="bg-yellow-50 flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:min-h-[50vh] lg:mb-[-10vh]">
+        <h1 className="text-4xl mx-6 mt-6 font-bold lg:mt-[-10vh]">Sydney Maki</h1>
+        <p className="text-xl text-center my-12 max-w-prose lg:mt-[-5vh]">
           Sydney Maki is a global markets reporter and editor for Bloomberg News
           in New York, covering debt restructurings, currencies, bonds and Latin
           America.
         </p>
+      </div>
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {props.stories.map((story, i) => (
             <div
@@ -87,7 +90,7 @@ const Home: NextPage<Props> = (props) => {
                   {story.title}
                 </h6>
                 <p className="text-sm text-gray-400 self-end justify-self-end p-4 m-0">
-                  {new Date(story.pubDate).toLocaleString()}
+                  {new Date(story.pubDate).toLocaleDateString()} {new Date(story.pubDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                 </p>
               </a>
             </div>

@@ -14,18 +14,14 @@ const Layout = (
   }
 ) => {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen font-serif">
       <Head>
         <title>{props.title}</title>
         <meta name="description" content="Sydney Maki's personal website" />
-        <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-        />
       </Head>
-      <nav className="w-full bg-yellow-300 p-2 align-middle relative">
-        <span className="text-bold text-2xl mx-8 inline">Sydney Maki</span>
-        <ul className="inline absolute right-5">
+      <nav className="w-full bg-yellow-300 p-2 align-middle">
+        {/* <span className="text-bold text-2xl mx-8 inline">Sydney Maki</span> */}
+        <ul className="inline absolute right-3 mt-5">
           <li className="inline mx-3">
             <a
               className="inline"
